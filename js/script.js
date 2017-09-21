@@ -1,3 +1,5 @@
+/* Previois tasks code
+
 //alert asking users to type their name
 var name = prompt('Enter your name');
 alert('Hello, ' + name);
@@ -18,3 +20,25 @@ var a = 12;
 triangleArea = (a * h / 2);
 
 console.log('Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea);
+ */
+
+
+//if statement checking whether number is positive or negative
+
+var a = 23;
+    b = 45;
+    value = (a * a) + (2 * a * b) - (b * b);
+
+console.log(value);
+
+if (value > 0) {
+    console.log(value + ' = wynik jest dodatni');
+}
+
+else if (value < 0) {
+    console.log(value + ' = wynik jest ujemny')
+}
+else {
+    console.log(' wynik to "0"')
+}
+
