@@ -1,4 +1,4 @@
-/* Previois tasks code
+/* Previous tasks code
 
 //alert asking users to type their name
 var name = prompt('Enter your name');
@@ -25,20 +25,41 @@ console.log('Triangle field with base a: ' + a + ' and height h: ' + h + ' is eq
 
 //if statement checking whether number is positive or negative
 
-var a = 23;
-    b = 45;
-    value = (a * a) + (2 * a * b) - (b * b);
+// var a = 23;
+// var b = 45;
+// var value = (a * a) + (2 * a * b) - (b * b);
+//
+// console.log(value);
+//
+// if (value > 0) {
+//     console.log(value + ' = wynik jest dodatni');
+// }
+//
+// else if (value < 0) {
+//     console.log(value + ' = wynik jest ujemny');
+// }
+// else {
+//     console.log(' wynik to "0"');
+// }
 
-console.log(value);
 
-if (value > 0) {
-    console.log(value + ' = wynik jest dodatni');
+
+function getTriangleArea(a,h) {
+    var value = a * h / 2;
+
+    if ((a > 0) && (h > 0 )) {
+        return (a * h / 2);
+    }
+    else {
+        console.log('nieprawidłowe dane');
+    }
 }
 
-else if (value < 0) {
-    console.log(value + ' = wynik jest ujemny')
-}
-else {
-    console.log(' wynik to "0"')
-}
+console.log("'Zadanie 9.1' outcome = " + getTriangleArea(43, 6));
 
+var triangle1Area = getTriangleArea(12, 11);
+var triangle2Area = getTriangleArea(13, 19);
+var triangle3Area = getTriangleArea(16, 13);
+console.log("First example outcome = " + triangle1Area);
+console.log("Second example outcome = " + triangle2Area);
+console.log("Third example outcome = " + triangle3Area);
