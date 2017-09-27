@@ -74,7 +74,7 @@ var allNames = femaleNames.concat(maleNames);
 
 var newName = 'Marian';
 
-//if statement checks wheter newName duplicates;
+//if statement checks whether newName duplicates;
 
 if (allNames.indexOf(newName) === -1) {
     newName = allNames.push(newName);
