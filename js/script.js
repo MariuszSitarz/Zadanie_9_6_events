@@ -65,7 +65,7 @@ console.log("Second example outcome = " + triangle2Area);
 console.log("Third example outcome = " + triangle3Area);
 */
 
-//Zadanie 9.2 array concat method;
+/*Zadanie 9.2 array concat method;
 
 var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
 var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
@@ -83,3 +83,16 @@ else {
     console.log(newName + ' - Ta nazwa użytkownika jest już zajęta!');
 }
 console.log(allNames);
+
+*/
+
+//Zadanie 9.3 Velociraptor czy Triceratops?
+
+var text = "Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.",
+    dinosaur = 'Triceratops',
+    dinotoUpperCase = dinosaur.toUpperCase(),
+    dinosaurAfter = text.replace('Velociraptor',dinotoUpperCase),
+    dinosaurAfterSlice = dinosaurAfter.slice(0,72);
+
+    console.log(dinosaurAfterSlice);
+
