@@ -43,7 +43,7 @@ console.log('Triangle field with base a: ' + a + ' and height h: ' + h + ' is eq
 // }
 
 
-
+/* zadanie 9.3 funkcje
 function getTriangleArea(a,h) {
     var value = a * h / 2;
 
@@ -63,3 +63,23 @@ var triangle3Area = getTriangleArea(16, 13);
 console.log("First example outcome = " + triangle1Area);
 console.log("Second example outcome = " + triangle2Area);
 console.log("Third example outcome = " + triangle3Area);
+*/
+
+//Zadanie 9.2 array concat method;
+
+var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
+var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+
+var allNames = femaleNames.concat(maleNames);
+
+var newName = 'Marian';
+
+//if statement checks wheter newName duplicates;
+
+if (allNames.indexOf(newName) === -1) {
+    newName = allNames.push(newName);
+}
+else {
+    console.log(newName + ' - Ta nazwa użytkownika jest już zajęta!');
+}
+console.log(allNames);
