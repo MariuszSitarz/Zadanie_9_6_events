@@ -88,7 +88,9 @@ console.log(allNames);
 
 //Zadanie 9.3 Velociraptor czy Triceratops?
 
+/*
 var text = "Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.",
+ /*
     dinosaur = 'Triceratops',
     dinotoUpperCase = dinosaur.toUpperCase(),
     dinosaurAfter = text.replace('Velociraptor',dinotoUpperCase),
@@ -97,6 +99,26 @@ var text = "Velociraptor is a genus of herbivorous ceratopsid dinosaur that firs
 
 
     console.log(dinosaurAfterSlice);
+*/
 
+//*
+
+//Zadanie 9.4 christmas tree
+
+function drawTree(height) {
+//loop for drawing stars in a row;
+    for (var i=0; i<height; i++) {
+//loop for drawing stars in line;
+        var row = "";
+        // bidning stars with row number, i+1 to level the tree
+        for(var j=0; j < i+1; j++){
+            row = row + "*";
+        }
+        console.log(row);
+
+    }
+}
+
+drawTree(7);
 
 
