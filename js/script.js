@@ -104,7 +104,7 @@ var text = "Velociraptor is a genus of herbivorous ceratopsid dinosaur that firs
 //*
 
 //Zadanie 9.4 christmas tree
-
+/*
 function drawTree(height) {
 //loop for drawing stars in a row;
     for (var i=0; i<height; i++) {
@@ -120,5 +120,15 @@ function drawTree(height) {
 }
 
 drawTree(7);
+*/
 
 
+//Zadanie 9.4 alert with button names
+
+var buttonsAlert = document.getElementsByClassName('button');
+
+for(var i=0; i < buttonsAlert.length; i++) {
+
+    alert(buttonsAlert[i].innerText);
+
+}
