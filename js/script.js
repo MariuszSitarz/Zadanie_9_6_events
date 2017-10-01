@@ -124,7 +124,7 @@ drawTree(7);
 
 
 //Zadanie 9.4 alert with button names
-
+/*
 var buttonsAlert = document.getElementsByClassName('button');
 
 for(var i=0; i < buttonsAlert.length; i++) {
@@ -132,3 +132,17 @@ for(var i=0; i < buttonsAlert.length; i++) {
     alert(buttonsAlert[i].innerText);
 
 }
+*/
+
+//Zadanie 9_6 events
+
+var clickButton = document.getElementById('button');
+var list = document.getElementById('list');
+clickButton.addEventListener('click', function () {
+    var list = document.getElementById('list');
+    var element = document.createElement('li');
+    var addNumber = document.getElementsByTagName('li').length;
+    element.innerHTML = 'item ' + addNumber;
+    list.appendChild(element);
+});
+
